@@ -203,20 +203,27 @@ SVG(filename='./svg/funnel.svg')
 # 資料探索 Data Exploration
 # Predict survival on Titanic 
 import pandas as pd
+import matplotlib.pyplot as plt
+
 df = pd.read_csv("./svg/train.csv")
+df.info()
 
 # 處理遺失值
 # Remove Ticket, Cabin
 df = df.drop(['Ticket','Cabin'], axis=1)
+
+clear_df = df.fillna('Missing')
 
 # Remove NaN values
 df = df.dropna() 
 
 # 算出死亡數
 fig = plt.figure() 
-             
-df.Survived.value_counts().plot(kind='bar')
-ax1.set_xlim(-1, 2)
+
+# barplot and Horizotal barplot
+df.Survived.value_counts().plot(kind='bar', rot=0)
+#df.Survived.value_counts().plot(kind='barh', rot=90)
+#ax1.set_xlim(-1, 2)
 plt.title("Distribution of Survival, (1 = Survived)") 
 
 # 死亡與年紀分布
@@ -225,9 +232,12 @@ plt.ylabel("Age")
 plt.grid(b=True, which='major', axis='y')  
 plt.title("Survial by Age,  (1 = Survived)")
 
+indexer = df.Age.value_counts().argsort()
+
 # 根據艙等分布
 df.Pclass.value_counts().plot(kind="barh")
-ax3.set_ylim(-1, len(df.Pclass.value_counts()))
+#df.Pclass.value_counts().plot(kind='bar',rot=0)
+#ax3.set_ylim(-1, len(df.Pclass.value_counts()))
 plt.title("Class Distribution")
 
 # 年紀與艙等分布
