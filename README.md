@@ -7,3 +7,6 @@ http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/NumPyBa
 
 -- Pandas Basic
 http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/PandasBasic.ipynb
+
+-- Regular Expression
+http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/RegularExpression.ipynb
