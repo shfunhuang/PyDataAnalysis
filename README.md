@@ -2,6 +2,9 @@
 
 Data Wrangling with Pandas, NumPy, and IPython(Spyder) - Python for Data Analysis
 
+-- Data Wrangling     
+http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/DataWrangling.ipynb
+
 -- Python Basic 1    
 http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/PYBASIC_1.ipynb
 
