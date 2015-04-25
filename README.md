@@ -16,3 +16,6 @@ http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/PandasB
 
 -- Regular Expression
 http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/RegularExpression.ipynb
+
+-- Regular Expression (Clearing Chinese)               
+http://nbviewer.ipython.org/github/shfunhuang/PyDataAnalysis/blob/master/RegExChinese.ipynb
